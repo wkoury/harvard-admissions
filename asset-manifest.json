@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/harvard-admissions/static/css/main.5a91e145.chunk.css",
+    "main.js": "/harvard-admissions/static/js/main.7573c969.chunk.js",
+    "main.js.map": "/harvard-admissions/static/js/main.7573c969.chunk.js.map",
+    "runtime-main.js": "/harvard-admissions/static/js/runtime-main.969d3d0f.js",
+    "runtime-main.js.map": "/harvard-admissions/static/js/runtime-main.969d3d0f.js.map",
+    "static/js/2.0e65c44e.chunk.js": "/harvard-admissions/static/js/2.0e65c44e.chunk.js",
+    "static/js/2.0e65c44e.chunk.js.map": "/harvard-admissions/static/js/2.0e65c44e.chunk.js.map",
+    "index.html": "/harvard-admissions/index.html",
+    "precache-manifest.bade98952ee6300c4587ede4fbb45747.js": "/harvard-admissions/precache-manifest.bade98952ee6300c4587ede4fbb45747.js",
+    "service-worker.js": "/harvard-admissions/service-worker.js",
+    "static/css/main.5a91e145.chunk.css.map": "/harvard-admissions/static/css/main.5a91e145.chunk.css.map",
+    "static/js/2.0e65c44e.chunk.js.LICENSE.txt": "/harvard-admissions/static/js/2.0e65c44e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.969d3d0f.js",
+    "static/js/2.0e65c44e.chunk.js",
+    "static/css/main.5a91e145.chunk.css",
+    "static/js/main.7573c969.chunk.js"
+  ]
+}
