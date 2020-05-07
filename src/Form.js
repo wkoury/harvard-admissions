@@ -30,14 +30,19 @@ class Form extends React.Component {
                 <form>
                     <p><label>What was your highest score on the math section of the SAT?</label></p>
                     <input type='number' placeholder='200-800' name='mathSAT' onChange={this.handleChange}/>
+                    
                     <p><label>What was your highest score on the verbal section of the SAT?</label></p>
                     <input type='number' placeholder='200-800' name='verbalSAT' onChange={this.handleChange}/>
+                    
                     <p><label>What is your high school GPA (normalized to a 4-point scale)?</label></p>
                     <input type='number' placeholder='4.0' name='GPA' onChange={this.handleChange}/>
+                    
                     <p><label>What is your average score across all of the SAT II subject tests that you've taken?</label></p>
                     <input type='number' placeholder='200-800' name='avgSubjectSAT' onChange={this.handleChange}/>
+                   
                     <p><label>Are you a US citizen or permanent resident?</label></p>
                     yes<input type='checkbox' name='citizenship'/> no<input type='checkbox'/>
+                   
                     <p><label>What is your race/ethnicity?</label></p>
                     <select id="ethnicities">
                         <option value='white'>White</option>
@@ -47,6 +52,7 @@ class Form extends React.Component {
                         <option value='other'>Other</option>
                         <option value='undisclosed'>Prefer not to say</option>
                     </select>
+                    
                     <p><label>Do you have a special connection to Harvard? For example, do any of the following cases apply to you:</label></p>
                     <ul>
                         <li>You are being recruited as a varsity athlete.</li>
