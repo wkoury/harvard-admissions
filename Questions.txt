@@ -1,0 +1,22 @@
+What was your highest score on the math section of the SAT?
+    note: must be a number between 200 and 800 that is a multiple of 10
+
+What was your highest score on the verbal section of the SAT?
+    note: must be a number between 200 and 800 that is a multiple of 10
+
+What is your high school GPA? (Please normalize to a 4-point scale where A = 4, B = 3, etc.)
+    note: must be a real number between 0 and 4
+
+What is your average score across all of the SAT II subject tests that you've taken?
+    note: must be a number between 200 and 800 that is a multiple of 10
+
+Are you a US citizen or permanent resident?
+
+What is your race/ethnicity?
+    note: options should be "white", "African American", "Hispanic", "Asian American", "Other", "Prefer not to say"
+
+Do you have a special connection to Harvard? For example, do any of the following cases apply to you:
+    you are being recruited as a varsity athlete
+    you have relatives who are Harvard alumni
+    you have relatives who are Harvard employees
+    you have relatives who have made large donations to Harvard in the past
