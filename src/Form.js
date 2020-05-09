@@ -52,10 +52,13 @@ class Form extends React.Component {
                         <option value='other'>Other</option>
                         <option value='undisclosed'>Prefer not to say</option>
                     </select>
-                    
-                    <p><label>Do you have a special connection to Harvard? For example, do any of the following cases apply to you:</label></p>
+
+                    <p><label>Are you being recruited by Harvard for varsity athletics??</label></p>
+                    yes<input type='checkbox' name='connections'/> no<input type='checkbox'/>
+
+        
+                    <p><label>Do you have any non-athletic special connection to Harvard? For example, do any of the following cases apply to you:</label></p>
                     <ul>
-                        <li>You are being recruited as a varsity athlete.</li>
                         <li>You have relatives who are Harvard alumni.</li>
                         <li>You have relatives who are Harvard employees.</li>
                         <li>You have relatives who made large donations to Harvard in the past.</li>
