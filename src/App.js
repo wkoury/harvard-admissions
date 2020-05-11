@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from './components/Form';
+import Input from './components/Input';
 import Probability from './components/Probability';
 
 class App extends React.Component{
@@ -7,7 +7,7 @@ class App extends React.Component{
     return (
       <div className="app">
         <h3>What is your probability of being admitted to Harvard?</h3>
-        <Form />
+        <Input />
         <Probability 
           percent='X'
         />
