@@ -1,6 +1,6 @@
 Collaboration between Dr. Tyler Ransom and Will Koury.
 
-A webapp to estimate a given high school senior's chances of being accepted to Harvard University.
+A static web page that estimates a given high school senior's chances of being accepted to Harvard University.
 
 ### To-do list
 * About page

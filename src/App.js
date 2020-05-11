@@ -9,7 +9,7 @@ class App extends React.Component{
         <h3>What is your probability of being admitted to Harvard?</h3>
         <Input />
         <Probability 
-          percent='X'
+          percentage='X'
         />
       </div>
     );

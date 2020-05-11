@@ -5,7 +5,7 @@ class Probability extends React.Component {
     render(){
         return(
             <div className='probability'>
-                <p>Your probability of being accepted at Harvard is {this.props.percent}%.</p>
+                <p>{this.props.percentage}% of students with similar credentials were accepted to Harvard.</p>
             </div>
         );
     }
