@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css'
 
 class Form extends React.Component {
     constructor(props){
@@ -10,6 +11,7 @@ class Form extends React.Component {
             avgSubjectSAT: null,
             citizenship: null,
             ethnicity: null,
+            athletics: null,
             connections: null
         };
 
@@ -26,7 +28,7 @@ class Form extends React.Component {
     render(){
 
         return(
-            <div>
+            <div className='form'>
                 <form>
                     <p><label>What was your highest score on the math section of the SAT?</label></p>
                     <input type='number' placeholder='200-800' name='mathSAT' onChange={this.handleChange}/>
@@ -41,7 +43,10 @@ class Form extends React.Component {
                     <input type='number' placeholder='200-800' name='avgSubjectSAT' onChange={this.handleChange}/>
                    
                     <p><label>Are you a US citizen or permanent resident?</label></p>
-                    yes<input type='checkbox' name='citizenship'/> no<input type='checkbox'/>
+                    <label class='switch'>
+                        <input type='checkbox' onChange={this.handleChange}/>
+                        <span class='slider'/>
+                    </label>
                    
                     <p><label>What is your race/ethnicity?</label></p>
                     <select id="ethnicities">
@@ -54,9 +59,8 @@ class Form extends React.Component {
                     </select>
 
                     <p><label>Are you being recruited by Harvard for varsity athletics??</label></p>
-                    yes<input type='checkbox' name='connections'/> no<input type='checkbox'/>
+                    yes<input type='checkbox' name='athletics'/> no<input type='checkbox'/>
 
-        
                     <p><label>Do you have any non-athletic special connection to Harvard? For example, do any of the following cases apply to you:</label></p>
                     <ul>
                         <li>You have relatives who are Harvard alumni.</li>
