@@ -5,7 +5,6 @@ A static web page that estimates a given high school senior's chances of being a
 https://wkoury.github.io/harvard-admissions/
 
 ### To-do list
-* Map input data to output function
 * About page
 * Description
 * Link to paper
