@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/harvard-admissions/precache-manifest.6047195b04ce04f72f41e80fd9038a68.js"
+  "/harvard-admissions/precache-manifest.05872bde4d9ae72d1b9c41f2e87ebca0.js"
 );
 
 self.addEventListener('message', (event) => {
