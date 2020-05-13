@@ -1,4 +1,5 @@
 import React from 'react';
+import Probability from './Probability';
 import '../App.css'
 
 class Input extends React.Component {
@@ -7,9 +8,9 @@ class Input extends React.Component {
         this.state = {
             mathSAT: 500,
             verbalSAT: 500,
-            GPA: 4.0,
+            GPA: 2.0,
             subjectSAT: 500,
-            citizenship: false,
+            citizenship: true,
             ethnicity: 'white',
             athletics: false,
             connections: false
@@ -132,6 +133,16 @@ class Input extends React.Component {
                         onChange={this.check}
                     />
                 </form>
+                <Probability 
+                    mathSAT={this.state.mathSAT}
+                    verbalSAT={this.state.verbalSAT}
+                    GPA={this.state.GPA}
+                    subjectSAT={this.state.subjectSAT}
+                    citizenship={this.state.citizenship}
+                    ethnicity={this.state.ethnicity}
+                    athletics={this.state.athletics}
+                    connections={this.state.connections}
+                />
             </div>
         );
     }
