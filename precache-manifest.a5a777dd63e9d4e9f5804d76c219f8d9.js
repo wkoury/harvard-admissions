@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dc708481a770b433384768edf926285e",
+    "revision": "6f79b2bc42dd53fafe0b8966ba2a7b0f",
     "url": "/harvard-admissions/index.html"
   },
   {
-    "revision": "25987227afb2df38ab60",
+    "revision": "4353c2cb1c448e7066d4",
     "url": "/harvard-admissions/static/css/main.5b03e5fd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/harvard-admissions/static/js/2.9a5e3556.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "25987227afb2df38ab60",
-    "url": "/harvard-admissions/static/js/main.6361241a.chunk.js"
+    "revision": "4353c2cb1c448e7066d4",
+    "url": "/harvard-admissions/static/js/main.351ea63d.chunk.js"
   },
   {
     "revision": "bb4bfa801a34d3c33df7",
