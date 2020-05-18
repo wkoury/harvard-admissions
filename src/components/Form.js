@@ -22,9 +22,21 @@ class Input extends React.Component {
 
     handleChange(event){
         event.preventDefault();
-        this.setState({
-            [event.target.name]: event.target.value
-        });
+       
+        //prevent the user from putting invalid GPAs in the refine box
+        if(event.target.name==='GPA'){
+            if(event.target.value > 4 || event.target.value < 0){
+                //do nothing
+            }else{
+                this.setState({
+                    [event.target.name]: event.target.value
+                });
+            }
+        }else{
+            this.setState({
+                [event.target.name]: event.target.value
+            });
+        }
     }
 
     check(event){
@@ -41,6 +53,12 @@ class Input extends React.Component {
     }
 
     render(){
+
+        const Spacer = () => {
+            return (
+                <span> | Refine: </span>
+            );
+        };
 
         return(
             <div className='form'>
@@ -67,15 +85,25 @@ class Input extends React.Component {
                         <div>{this.state.verbalSAT}</div>
 
                         <p><label>What is your high school GPA (normalized to a 4-point scale)?</label></p>
-                        <input 
-                            type='range' 
-                            min={0.0} 
-                            max={4.0} 
-                            value={this.state.GPA} 
-                            step={0.01} 
-                            name='GPA' 
-                            onChange={this.handleChange}/>
-                        <div>{this.state.GPA}</div> {/* Not sure if we should have 2 or 3 significant figures here */}
+                        <span><input 
+                                type='range' 
+                                min={0.0} 
+                                max={4.0} 
+                                value={this.state.GPA} 
+                                step={0.01} 
+                                name='GPA' 
+                                onChange={this.handleChange}/>
+                            <Spacer />
+                            <input
+                                type='number'
+                                min={0}
+                                max={4}
+                                step={0.01}
+                                value={this.state.GPA}
+                                name='GPA'
+                                size='75'
+                                onChange={this.handleChange} />
+                        <div>{this.state.GPA}</div></span>
 
                         <p><label>What is your average score across all of the SAT II subject tests that you've taken?</label></p>
                         <input 
@@ -139,7 +167,7 @@ class Input extends React.Component {
                         connections={this.state.connections}/>
                 </div>
             </div>
-        );
+        );   
     }
 }
 
