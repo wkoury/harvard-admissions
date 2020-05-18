@@ -59,7 +59,8 @@
 }
 
 .about{
-  margin-left: 15px;
+  max-width: 700px;
+  margin: auto;
 }
 
 /* @media screen and (max-width:600px) {
