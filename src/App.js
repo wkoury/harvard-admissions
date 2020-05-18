@@ -5,7 +5,7 @@ class App extends React.Component{
   render(){
     return (
       <div className="app">
-        <h3>What is your probability of being admitted to Harvard?</h3>
+        <h3 className='title'>What is your probability of being admitted to Harvard?</h3>
         <Form />
       </div>
     );

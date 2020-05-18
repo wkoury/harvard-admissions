@@ -52,8 +52,7 @@ class Input extends React.Component {
                         max={800} 
                         value={this.state.mathSAT} 
                         step={10} name='mathSAT' 
-                        onChange={this.handleChange}
-                    />
+                        onChange={this.handleChange}/>
                     <div>{this.state.mathSAT}</div>
                     
                     <p><label>What was your highest score on the verbal section of the SAT?</label></p>
@@ -63,8 +62,7 @@ class Input extends React.Component {
                         max={800} 
                         value={this.state.verbalSAT} 
                         step={10} name='verbalSAT' 
-                        onChange={this.handleChange}
-                    />
+                        onChange={this.handleChange}/>
                     <div>{this.state.verbalSAT}</div>
 
                     <p><label>What is your high school GPA (normalized to a 4-point scale)?</label></p>
@@ -75,8 +73,7 @@ class Input extends React.Component {
                         value={this.state.GPA} 
                         step={0.01} 
                         name='GPA' 
-                        onChange={this.handleChange}
-                    />
+                        onChange={this.handleChange}/>
                     <div>{this.state.GPA}</div> {/* Not sure if we should have 2 or 3 significant figures here */}
 
                     <p><label>What is your average score across all of the SAT II subject tests that you've taken?</label></p>
@@ -86,8 +83,7 @@ class Input extends React.Component {
                         max={800} 
                         value={this.state.subjetSAT} 
                         step={10} name='subjectSAT' 
-                        onChange={this.handleChange}
-                    />
+                        onChange={this.handleChange}/>
                     <div>{this.state.subjectSAT}</div>
 
                     <p><label>Are you a US citizen or permanent resident?</label></p>
@@ -95,21 +91,19 @@ class Input extends React.Component {
                         type='checkbox' 
                         checked={this.state.citizenship} 
                         name='citizenship' 
-                        onChange={this.check}
-                    />
+                        onChange={this.check}/>
                    
                     <p><label>What is your race/ethnicity?</label></p>
                     <select 
                         name="ethnicity" 
                         checked={this.state.ethnicity} 
-                        onChange={this.handleChange}
-                    >
-                        <option value='white'>White</option>
-                        <option value='african-american'>African American</option>
-                        <option value='hispanic'>Hispanic</option>
-                        <option value='asian-american'>Asian-American</option>
-                        <option value='other'>Other</option>
-                        <option value='undisclosed'>Prefer not to say</option>
+                        onChange={this.handleChange}>
+                            <option value='white'>White</option>
+                            <option value='african-american'>African American</option>
+                            <option value='hispanic'>Hispanic</option>
+                            <option value='asian-american'>Asian-American</option>
+                            <option value='other'>Other</option>
+                            <option value='undisclosed'>Prefer not to say</option>
                     </select>
 
                     <p><label>Are you being recruited by Harvard for varsity athletics?</label></p>
@@ -117,8 +111,7 @@ class Input extends React.Component {
                         type='checkbox' 
                         name='athletics'
                         checked={this.state.athletics}
-                        onChange={this.check}
-                    /> 
+                        onChange={this.check}/> 
 
                     <p><label>Do you have any non-athletic special connection to Harvard? For example, do any of the following cases apply to you:</label></p>
                     <ul>
@@ -130,8 +123,7 @@ class Input extends React.Component {
                         type='checkbox' 
                         name='connections'
                         checked={this.state.connections}
-                        onChange={this.check}
-                    />
+                        onChange={this.check}/>
                 </form>
                 <Probability 
                     mathSAT={this.state.mathSAT}
@@ -141,8 +133,7 @@ class Input extends React.Component {
                     citizenship={this.state.citizenship}
                     ethnicity={this.state.ethnicity}
                     athletics={this.state.athletics}
-                    connections={this.state.connections}
-                />
+                    connections={this.state.connections}/>
             </div>
         );
     }

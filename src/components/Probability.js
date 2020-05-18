@@ -3,7 +3,25 @@ import data from '../assets/Data';
 
 class Probability extends React.Component {
 
-    //All functions in this class are based on pseudocode from Dr. Tyler Ransom.
+    //returns a style variable based on the percentage
+    //red: below 2.5%
+    //yellow: between 2.5 and 4% (4% was Harvard's admit rate in 2019)
+    //green: anything above that
+    getColor(percentage) { 
+        let color;
+
+        if(percentage < 2.5){
+            color = 'red';
+        }else if(percentage >= 2.5 && percentage < 4){
+            color = 'yellow';
+        }else{
+            color = 'green';
+        }
+
+        return color;
+    }
+
+    //All functions below are based on pseudocode from Dr. Tyler Ransom.
 
     calculatePercentage() {
         let percentage = -1; //if -1 shows up on the site, then something needs to be fixed
@@ -58,7 +76,9 @@ class Probability extends React.Component {
             }
         }
 
-        return <p>{percentage}% of students with your attributes were accepted to Harvard.</p>
+        return <p><span style={{
+            color: this.getColor(percentage)
+        }}className='bigger'>{percentage}%</span> of students with your attributes were accepted to Harvard.</p>
     }
 
     calculateAcademicIndex() { //the + sign is a unary operator to convert the props from strings to numbers
