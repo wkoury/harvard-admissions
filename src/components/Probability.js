@@ -121,7 +121,6 @@ class Probability extends React.Component {
             <div className='probability'>
                 <h4>{this.calculatePercentage()}</h4>
                 <p><b>Stats for nerds:</b></p>
-                <p>Total SAT: {+this.props.mathSAT + +this.props.verbalSAT}</p>
                 <p>Academic Index: {(+this.props.mathSAT + +this.props.verbalSAT)/20 + +this.props.GPA*20 + +this.props.subjectSAT/10}</p>
                 <p>Academic Index Decile: {+this.calculateDecile() + 1}</p>
             </div>
