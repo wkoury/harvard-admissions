@@ -87,7 +87,6 @@ class Probability extends React.Component {
 
     calculateDecile() {
         let ai = +this.calculateAcademicIndex();
-        console.log(ai);
         let decile;
         //this function assumes that 60 <= ai <= 240 (actually the lower bound is 40!)
         //if it is not within those bounds decile will be assigned -1
