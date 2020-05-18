@@ -78,7 +78,7 @@ class Probability extends React.Component {
 
         return <p><span style={{
             color: this.getColor(percentage)
-        }}className='bigger'>{percentage}%</span> of students with your attributes were accepted to Harvard.</p>
+        }}className='bigger'>{percentage}%</span> of students with your attributes were admitted to Harvard.</p>
     }
 
     calculateAcademicIndex() { //the + sign is a unary operator to convert the props from strings to numbers
