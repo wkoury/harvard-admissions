@@ -26,10 +26,16 @@ class Input extends React.Component {
         //prevent the user from putting invalid GPAs in the refine box
         if(event.target.name==='GPA'){
             if(event.target.value > 4 || event.target.value < 0){
-                //do nothing
+                //do nothing, this input is invalid
             }else{
+                let GPA = +event.target.value;
+                
+                if((GPA * 100) % 1 !== 0){ //if we have more than 2 decimal places...
+                    GPA = parseFloat(event.target.value).toFixed(2); //...restrict GPA to 2 decimal places
+                }
+
                 this.setState({
-                    [event.target.name]: event.target.value
+                    [event.target.name]: GPA
                 });
             }
         }else{
@@ -92,7 +98,8 @@ class Input extends React.Component {
                                 value={this.state.GPA} 
                                 step={0.01} 
                                 name='GPA' 
-                                onChange={this.handleChange}/>
+                                onChange={this.handleChange}
+                                />
                             <Spacer />
                             <input
                                 type='number'
@@ -100,8 +107,9 @@ class Input extends React.Component {
                                 max={4}
                                 step={0.01}
                                 value={this.state.GPA}
+                                maxLength={3}
                                 name='GPA'
-                                size='75'
+                                size={75}
                                 onChange={this.handleChange} />
                         <div>{this.state.GPA}</div></span>
 
