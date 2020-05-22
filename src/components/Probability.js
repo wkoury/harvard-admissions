@@ -13,7 +13,7 @@ class Probability extends React.Component {
         if(percentage < 2.5){
             color = 'red';
         }else if(percentage >= 2.5 && percentage < 4){
-            color = 'yellow';
+            color = '#ff9900';
         }else{
             color = 'green';
         }
