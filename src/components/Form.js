@@ -20,6 +20,31 @@ class Input extends React.Component {
        this.check = this.check.bind(this);
     }
 
+    componentWillUnmount(){ //store state in local storage when you go to about
+        const data = this.state;
+        localStorage.setItem('data', JSON.stringify(data));
+    }
+
+    componentWillMount(){ //check for local storage and set state to that
+        if(localStorage.length !== 0){
+            const data = JSON.parse(localStorage.data);
+
+            //destructure data
+            const { mathSAT, verbalSAT, GPA, subjectSAT, citizenship, ethnicity, athletics, connections } = data;
+
+            this.setState({ //I think there is a better way to do this but I have not figured it out yet
+                mathSAT: mathSAT,
+                verbalSAT: verbalSAT,
+                GPA: GPA,
+                subjectSAT: subjectSAT,
+                citizenship: citizenship,
+                ethnicity: ethnicity,
+                athletics: athletics,
+                connections: connections
+            });
+        }
+    }
+
     handleChange(event){
         event.preventDefault();
        
