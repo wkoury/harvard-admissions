@@ -25,7 +25,7 @@ class Input extends React.Component {
         localStorage.setItem('data', JSON.stringify(data));
     }
 
-    componentWillMount(){ //check for local storage and set state to that
+    componentDidMount(){ //check for local storage and set state to that
         if(localStorage.length !== 0){
             const data = JSON.parse(localStorage.data);
 
@@ -43,6 +43,8 @@ class Input extends React.Component {
                 connections: connections
             });
         }
+
+        localStorage.clear();
     }
 
     handleChange(event){
