@@ -130,7 +130,7 @@ class Input extends React.Component {
                             type='range' 
                             min={200} 
                             max={800} 
-                            value={this.state.subjetSAT} 
+                            value={this.state.subjectSAT} 
                             step={10} name='subjectSAT' 
                             onChange={this.handleChange}/>
                     <span>{this.state.subjectSAT}</span>
