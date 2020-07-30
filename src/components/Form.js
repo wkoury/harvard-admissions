@@ -160,7 +160,7 @@ class Input extends React.Component {
                         value={this.state.GPA}
                         maxLength={3}
                         name='GPA'
-                        size={75}
+                        size={4}
                         onChange={this.handleChange} />
                 </div>
             </div>
