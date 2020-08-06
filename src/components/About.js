@@ -9,7 +9,7 @@ const About = () => {
             <p>Holistic admissions are inherently random, so even the most academically qualified applicants may not have a large admissions probability.</p>
             <p>The designers of this website hope that you will use this information when deciding which colleges to apply to. Our primary motivation is providing information to the public.</p>
             <p>The underlying research behind this site was done by Drs. Tyler Ransom, Josh Kinsler, and Peter Arcidiacono. Web development was done by Will Koury.</p>
-            <span><center><a href='https://tyleransom.github.io/research/legacyathlete.pdf' rel='noopener noreferrer' target='_blank'>Research</a> | <a href='https://github.com/wkoury/harvard-admissions' rel='noopener noreferrer' target='_blank'>GitHub</a> | <a href='https://wkoury.com/harvard' rel='noopener noreferrer' target='_blank'>Further Reading</a></center></span>
+            <span><center><a href='https://tyleransom.github.io/research/legacyathlete.pdf' rel='noopener noreferrer' target='_blank'>Research</a> | <a href='https://github.com/wkoury/harvard-admissions' rel='noopener noreferrer' target='_blank'>GitHub</a></center></span>
         </div>
     );
 };
