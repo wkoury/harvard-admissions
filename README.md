@@ -17,11 +17,6 @@ Notes for those interested:
 # Installation
 You must have [NodeJS](https://nodejs.org/) installed in order to run this React app in development.
 
-Run the following commands:
-```
-git clone {this repository's url}
-cd harvard-admissions
-npm install
-```
+```cd``` into the repository's directory and run ```npm install``` to add the necessary dependencies.
 
 Run ```npm start``` to start the development server. Happy coding!
