@@ -23,3 +23,5 @@ git clone {this repository's url}
 cd harvard-admissions
 npm install
 ```
+
+Run ```npm start``` to start the development server. Happy coding!
