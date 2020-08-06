@@ -1,3 +1,4 @@
+# Description
 Collaboration between Dr. Tyler Ransom and Will Koury.
 
 A static web page that estimates a given high school senior's chances of being accepted to Harvard University.
@@ -12,3 +13,13 @@ https://wkoury.github.io/harvard-admissions/
 
 Notes for those interested:
 * These numbers officially come from [this research paper](https://tyleransom.github.io/research/legacyathlete.pdf) written by a trio of economists. Within that paper, we use Table 2 (p. 41) and Table 6, Panel B (p. 45) to construct our numbers.
+
+# Installation
+You must have [NodeJS](https://nodejs.org/) installed in order to run this React app in development.
+
+Run the following commands:
+```
+git clone {this repository's url}
+cd harvard-admissions
+npm install
+```
