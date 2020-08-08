@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+a, a:visited {
+  color: blue;
+}
+
 .app{
   max-width: 700px;
   margin: auto;
